@@ -1,0 +1,158 @@
+0.017   2023-08-05  Released-By: PERLANCAR; Urgency: medium
+
+        - No functional changes.
+
+        - [ux] When logging formatting error, include formatter names to
+          aid debugging.
+
+
+0.016   2023-01-19  Released-By: PERLANCAR; Urgency: low
+
+        - Tweak schema for field_value_formatters to fix completion.
+
+
+0.015   2022-11-04  Released-By: PERLANCAR; Urgency: low
+
+        - [ux] Add shorter alias option -n for --num-fields.
+
+        - [ux] Add -1 as shortcut for --num-fields=1.
+
+        - [doc] Add a tip/trick item.
+
+
+0.014   2022-10-17  Released-By: PERLANCAR; Urgency: medium
+
+        - Add shortcut options: --remove-nondigits,
+          --remove-comments, --remove-whitespaces, --format-phone.
+
+        - [bugfix] Non-simple headings (e.g. containing timestamp) were not
+          matched.
+
+        - [doc] Add mnenomic note for -N, -l.
+
+        - [ux] Add shortcut option -y for --clipboard=tee, and -Y for
+          --clipboard=only.
+
+
+0.013   2022-10-16  Released-By: PERLANCAR; Backward-Incompatible: yes
+
+        - [incompatible change] Rename --formatter to --field-value-formatter
+          (alias --fvfmt) to avoid ambiguity with --format. Also,
+          --no-formatters becomes --no-field-value-formatters,
+          --default-formatter-rules becomes --field-value-formatter-rules.
+
+        - [bugfix][doc] Usage line didn't yet include common options.
+
+        - Doc tweaks & typos.
+
+
+0.012   2022-10-15  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+        - Fix typos in documentation.
+
+        - [build] Rebuild to improve generated POD.
+
+
+0.011   2022-10-15  Released-By: PERLANCAR; Urgency: medium
+
+        - Add --clipboard option.
+
+        - [doc] Show complete usage line in POD.
+
+        - Improve default formatting rules: add condition key 'hide_field_name',
+          all rules are now evaluated and all formatters from matching, expand
+          docs.
+
+0.010   2022-10-09  Released-By: PERLANCAR; Urgency: medium
+
+        - [bugfix] We were repeatedly forming regex from string
+          (stringified regex) in --default-formatter-rules.
+
+        - Add categories for --no-formatters & --default-formatter-rules.
+
+
+0.009   2022-10-08  Released-By: PERLANCAR; Urgency: medium; Backward-Incompatible: yes
+
+        [INCOMPATIBLE CHANGES]
+
+        - Make -f alias for --formatter instead of --file.
+
+        [BUG FIXES]
+
+        - Fix field displaying with regard to formatters & --hide-field-name (-N).
+
+        - Fix normalizing / to :: in module name in --formatter.
+
+        - Fix specifying module name with args in --formatter.
+
+        [ENHANCEMENTS]
+
+        - Add --no-formatters (a.k.a. --raw-field-values a.k.a. -F) option.
+
+        - Add option/configuration default_formatter_rules.
+
+        - Add completion for --formatter option.
+
+        - Handle formatting error.
+
+
+0.008   2022-09-26  Released-By: PERLANCAR; Urgency: medium
+
+        - [ux] Make category/field matching case-insensitive.
+
+
+0.007   2022-09-09  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+        - [doc] Add TIPS & TRICKS POD section.
+
+
+0.006   2022-09-09  Released-By: PERLANCAR; Urgency: medium
+
+        - [ux] Add completion for --category, --entry, --field.
+
+
+0.005   2022-08-08  Released-By: PERLANCAR; Urgency: medium; Backward-Incompatible: yes
+
+        - [incompatible change] Rename CLI orgadb to orgadb-sel.
+
+        - Add option --filter-entries-by-field work.
+
+        - [bugfix] Field searching must be from the root field and not
+          subfields.
+
+
+0.004   2022-07-04  Released-By: PERLANCAR; Urgency: medium
+
+        - Decrypt .gpg files automatically, and show examples of using
+          orgadb as a password book query tool.
+
+        - Support formatters (--formatter).
+
+        - Add options: --num-entries, --num-fields.
+
+
+0.003   2022-07-03  Released-By: PERLANCAR; Urgency: medium
+
+        - Tweak output, now output is Org document.
+
+        - Introduce shell mode (--shell, -s).
+
+        - Allow searching subfields.
+
+        - Add options: --hide-field-name (-N).
+
+
+0.002   2022-06-24  Released-By: PERLANCAR; Urgency: low
+
+        - [ux] Add shortcut alias -f for --file.
+
+        - [doc] Tweak/fix documentation, add FAQ section.
+
+
+0.001   2022-06-12  Released-By: PERLANCAR
+
+        - First, early release.
